@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>津和野町 ITクリエイティブ合宿 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Maru+Gothic:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-tsuwano-base/90 backdrop-blur-sm shadow-sm py-3 transition-all duration-300">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-tsuwano-green flex items-center gap-2">
+                <i data-lucide="mountain" class="w-6 h-6"></i>
+                TSUWANO IT CAMP
+            </h1>
+            <nav class="hidden md:flex gap-6 font-bold text-sm">
+                <a href="#about" class="hover:text-tsuwano-red transition-colors">合宿について</a>
+                <a href="#learn" class="hover:text-tsuwano-red transition-colors">学ぶこと</a>
+                <a href="#schedule" class="hover:text-tsuwano-red transition-colors">スケジュール</a>
+            </nav>
+            <a href="#contact" class="bg-tsuwano-red text-white px-6 py-2 rounded-full font-bold shadow-md hover:bg-red-700 transition-transform hover:scale-105">
+                申し込む
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen min-h-[600px] flex items-center justify-center text-white hero-bg overflow-hidden">
+        <div class="absolute inset-0 bg-black/10"></div>
+        
+        <div class="container mx-auto px-4 relative z-10 text-center fade-in-section">
+            <div class="inline-block bg-tsuwano-yellow text-tsuwano-text px-4 py-1 rounded-full text-xs md:text-lg font-bold mb-6 handwritten-badge shadow-lg whitespace-nowrap">
+                2026.5.7(木) - 5.8(金) @ ADDressつわの寮
+            </div>
+            
+            <h2 class="text-base md:text-4xl font-bold mb-4 tracking-wider">
+                「地域の困った」を<br class="md:hidden">ITで解決する2日間
+            </h2>
+            
+            <h1 class="text-4xl md:text-7xl font-black mb-8 leading-tight drop-shadow-lg">
+                津和野町<br>
+                <span class="text-3xl md:text-6xl text-tsuwano-yellow">ITクリエイティブ</span>合宿
+            </h1>
+
+            <p class="text-lg md:text-xl font-bold mb-10 max-w-2xl mx-auto leading-relaxed">
+                石州瓦の町並みで、未来をつくる技術を学ぶ。<br>
+                AIとデザインの力で、あなたのアイデアを形にしよう。
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#about" class="bg-white text-tsuwano-green px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-gray-100 transition-all">
+                    詳しく見る <i data-lucide="chevron-down" class="inline w-5 h-5 ml-1"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Wave -->
+        <div class="wave-bottom">
+            <svg class="wave-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="wave-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-tsuwano-base relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in-section">
+                <span class="text-tsuwano-red font-hand text-2xl font-bold block mb-2">Concept</span>
+                <h2 class="text-xl md:text-4xl font-bold text-tsuwano-green">
+                    <span class="marker-yellow">なぜ、津和野でITなのか？</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                <div class="fade-in-section relative group">
+                    <div class="absolute -inset-2 bg-tsuwano-yellow rounded-4xl rotate-3 opacity-30 group-hover:rotate-6 transition-transform"></div>
+                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1000&auto=format&fit=crop" alt="ミーティング風景" class="relative rounded-4xl shadow-xl w-full h-80 object-cover">
+                </div>
+                <div class="fade-in-section">
+                    <h3 class="text-2xl font-bold mb-4 text-tsuwano-text">古き良き町に、<br>新しい風を吹き込む。</h3>
+                    <p class="text-gray-600 leading-8 mb-6">
+                        津和野町は「山陰の小京都」と呼ばれる美しい町ですが、少子高齢化や地域課題も抱えています。<br>
+                        この合宿では、<span class="font-bold text-tsuwano-red">「ただ学ぶ」だけでなく「解決する」</span>ことを目指します。最新のITツールを武器に、実際の地域課題に対するプロトタイプを作り上げます。
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-tsuwano-green/10 text-tsuwano-green px-3 py-1 rounded-full text-sm font-bold">#地方創生</span>
+                        <span class="bg-tsuwano-green/10 text-tsuwano-green px-3 py-1 rounded-full text-sm font-bold">#IT教育</span>
+                        <span class="bg-tsuwano-green/10 text-tsuwano-green px-3 py-1 rounded-full text-sm font-bold">#コミュニティ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="learn" class="py-24 bg-white relative">
+        <!-- Top Wave -->
+        <div class="wave-top" style="color: #FDFBF7;">
+            <svg class="wave-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="currentColor"></path>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-4 mt-12">
+            <div class="text-center mb-16 fade-in-section">
+                <span class="text-tsuwano-red font-hand text-2xl font-bold block mb-2">Curriculum</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-tsuwano-green">手に入れる<span class="marker-yellow">3つの武器</span></h2>
+                <p class="mt-4 text-gray-600">プログラミング未経験でも大丈夫。<br>最新ツールを使って、爆速で形にする技術を学びます。</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Card 1 -->
+                <div class="bg-tsuwano-base rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 fade-in-section border-b-8 border-tsuwano-yellow">
+                    <div class="w-16 h-16 bg-tsuwano-yellow/20 rounded-full flex items-center justify-center mb-6 text-tsuwano-yellow">
+                        <i data-lucide="palette" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">1. Canva基礎</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        アイデアを魅力的に伝えるためのデザイン思考と、Canvaを使ったスピーディーな資料・モックアップ作成術を習得します。
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-tsuwano-base rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 fade-in-section border-b-8 border-tsuwano-red">
+                    <div class="w-16 h-16 bg-tsuwano-red/20 rounded-full flex items-center justify-center mb-6 text-tsuwano-red">
+                        <i data-lucide="sparkles" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">2. AI活用術</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        ChatGPTやClaudeなどの生成AIを使いこなし、ブレインストーミングからコンテンツ生成まで、作業効率を劇的に高めます。
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-tsuwano-base rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 fade-in-section border-b-8 border-tsuwano-green">
+                    <div class="w-16 h-16 bg-tsuwano-green/20 rounded-full flex items-center justify-center mb-6 text-tsuwano-green">
+                        <i data-lucide="code-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">3. AIコーディング</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        コードが書けなくてもWebサイトは作れる！AIエディタ（Cursor等）を使って、対話形式でアプリを開発する手法を学びます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule & Target -->
+    <section id="schedule" class="py-24 bg-tsuwano-green text-white relative overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Schedule -->
+                <div class="fade-in-section">
+                    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+                        <i data-lucide="calendar-clock" class="w-8 h-8 text-tsuwano-yellow"></i>
+                        Schedule
+                    </h2>
+                    
+                    <div class="space-y-8 border-l-2 border-white/30 ml-3 pl-8 relative">
+                        <!-- Day 1 -->
+                        <div class="relative">
+                            <span class="absolute -left-[41px] bg-tsuwano-yellow text-tsuwano-green font-bold w-6 h-6 rounded-full flex items-center justify-center text-xs top-1">1</span>
+                            <h3 class="text-xl font-bold text-tsuwano-yellow mb-2">DAY 1 : 学びと創造</h3>
+                            <ul class="space-y-3 text-white/90">
+                                <li class="flex gap-4"><span class="font-mono opacity-70">10:00</span> <span>現地集合・オリエンテーション</span></li>
+                                <li class="flex gap-4"><span class="font-mono opacity-70">11:00</span> <span>インプット（Canva・AI・Coding）</span></li>
+                                <li class="flex gap-4"><span class="font-mono opacity-70">12:30</span> <span>津和野ランチタイム</span></li>
+                                <li class="flex gap-4"><span class="font-mono opacity-70">14:00</span> <span>チームビルディング・課題設定</span></li>
+                                <li class="flex gap-4"><span class="font-mono opacity-70">18:00</span> <span>プロトタイプ開発開始</span></li>
+                                <li class="flex gap-4"><span class="font-mono opacity-70">20:00</span> <span>交流会・中間共有</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Day 2 -->
+                        <div class="relative pt-4">
+                            <span class="absolute -left-[41px] bg-tsuwano-yellow text-tsuwano-green font-bold w-6 h-6 rounded-full flex items-center justify-center text-xs top-5">2</span>
+                            <h3 class="text-xl font-bold text-tsuwano-yellow mb-2">DAY 2 : 発表と未来</h3>
+                            <ul class="space-y-3 text-white/90">
+                                <li class="flex gap-4"><span class="font-mono opacity-70">09:00</span> <span>開発ラストスパート</span></li>
+                                <li class="flex gap-4"><span class="font-mono opacity-70">12:00</span> <span>ランチ休憩</span></li>
+                                <li class="flex gap-4"><span class="font-mono opacity-70">13:30</span> <span>最終ピッチ（発表会）</span></li>
+                                <li class="flex gap-4"><span class="font-mono opacity-70">15:00</span> <span>フィードバック・表彰</span></li>
+                                <li class="flex gap-4"><span class="font-mono opacity-70">16:00</span> <span>解散（お疲れ様でした！）</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Target & Image -->
+                <div class="flex flex-col justify-between fade-in-section delay-200">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+                            <i data-lucide="users" class="w-8 h-8 text-tsuwano-yellow"></i>
+                            Target
+                        </h2>
+                        <p class="mb-6 text-white/90 leading-relaxed">
+                            年齢や職種は問いません。「地域」と「デジタル」に興味がある方なら、どなたでも大歓迎です。
+                        </p>
+                        <div class="bg-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-2"><i data-lucide="check-circle" class="text-tsuwano-yellow w-5 h-5"></i> エンジニア・デザイナー志望の学生</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check-circle" class="text-tsuwano-yellow w-5 h-5"></i> 新規事業を考えたい地元企業の方</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check-circle" class="text-tsuwano-yellow w-5 h-5"></i> ICT教育に関心のある先生</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check-circle" class="text-tsuwano-yellow w-5 h-5"></i> 津和野に関わりたい関係人口の方</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1000&auto=format&fit=crop" alt="ワークショップの様子" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Location -->
+    <section class="py-24 bg-tsuwano-base">
+        <div class="container mx-auto px-4">
+            
+            <!-- Pricing -->
+            <div class="max-w-4xl mx-auto mb-20 fade-in-section">
+                <div class="text-center mb-12">
+                    <span class="text-tsuwano-red font-hand text-2xl font-bold block mb-2">Price</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-tsuwano-green">参加プラン</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <!-- Commuter Plan -->
+                    <div class="bg-white rounded-3xl p-8 shadow-md border-2 border-gray-100 relative top-4">
+                        <h3 class="text-xl font-bold text-gray-600 mb-2">通いプラン</h3>
+                        <p class="text-sm text-gray-400 mb-6">近隣にお住まいの方へ</p>
+                        <div class="text-4xl font-black text-tsuwano-text mb-4">
+                            ¥8,000<span class="text-sm font-normal text-gray-500">（税込）</span>
+                        </div>
+                        <ul class="space-y-2 mb-8 text-sm text-gray-600">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-tsuwano-green"></i> 2日間のカリキュラム参加</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-tsuwano-green"></i> 昼食（2回）付き</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-tsuwano-green"></i> 交流会参加費込み</li>
+                        </ul>
+                    </div>
+
+                    <!-- Stay Plan -->
+                    <div class="bg-white rounded-3xl p-8 shadow-xl border-4 border-tsuwano-red relative transform md:-translate-y-4">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-tsuwano-red text-white px-4 py-1 rounded-full text-sm font-bold shadow-md whitespace-nowrap">
+                            おすすめ！満喫プラン
+                        </div>
+                        <h3 class="text-xl font-bold text-tsuwano-red mb-2">宿泊プラン</h3>
+                        <p class="text-sm text-gray-400 mb-6">合宿の醍醐味を味わう</p>
+                        <div class="text-4xl font-black text-tsuwano-text mb-4">
+                            ¥15,000<span class="text-sm font-normal text-gray-500">（税込）</span>
+                        </div>
+                        <ul class="space-y-2 mb-8 text-sm text-gray-600">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-tsuwano-red"></i> 2日間のカリキュラム参加</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-tsuwano-red"></i> 全4食付き（地元の味！）</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-tsuwano-red"></i> ADDressつわの寮 宿泊</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-tsuwano-red"></i> 交流会・夜の開発会参加</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col md:flex-row fade-in-section">
+                <div class="w-full md:w-1/2 min-h-[300px] relative">
+                    <img src="img/tuwano.png" alt="津和野の風景" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+                <div class="w-full md:w-1/2 p-10 flex flex-col justify-center">
+                    <div class="inline-block bg-tsuwano-green text-white text-xs px-3 py-1 rounded-full mb-4 self-start">VENUE</div>
+                    <h3 class="text-2xl font-bold mb-4">ADDress つわの寮</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        旧藩校「養老館」の近くに位置する、古民家をリノベーションしたコミュニティ拠点です。広々とした和室やコワーキングスペースを備え、クリエイティブな活動に最適です。
+                    </p>
+                    <div class="flex items-start gap-3 text-gray-500 text-sm">
+                        <i data-lucide="map-pin" class="w-5 h-5 flex-shrink-0 mt-1"></i>
+                        <span>〒699-5605<br>島根県鹿足郡津和野町後田（詳細な住所は参加者にご連絡します）</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer / CTA -->
+    <footer id="contact" class="bg-tsuwano-text text-white py-16 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold mb-8 font-hand text-tsuwano-yellow">Let's Create Together!</h2>
+            <p class="mb-10 text-gray-300">定員になり次第、締め切らせていただきます。<br>興味のある方はお早めにお申し込みください。</p>
+            
+            <a href="#" class="inline-flex items-center gap-3 bg-tsuwano-red text-white px-10 py-5 rounded-full font-bold text-xl shadow-lg hover:bg-red-600 hover:scale-105 transition-all group">
+                今すぐ申し込む
+                <i data-lucide="arrow-right" class="group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <div class="mt-16 pt-8 border-t border-white/10 text-sm text-gray-400">
+                &copy; 2026 Tsuwano IT Creative Camp Executive Committee.
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

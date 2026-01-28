@@ -1,0 +1,67 @@
+        /* カスタムスタイル */
+        body {
+            background-color: #FDFBF7;
+            color: #4A3B32;
+            background-image: radial-gradient(#E5E5E5 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        /* 波型の装飾 */
+        .wave-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+        .wave-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .wave-svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 60px;
+        }
+        .wave-fill {
+            fill: #FDFBF7;
+        }
+        
+        /* マーカー風アンダーライン */
+        .marker-yellow {
+            background: linear-gradient(transparent 60%, #F4B942 60%);
+            display: inline-block;
+            padding: 0 4px;
+        }
+
+        /* ふわっと浮き上がるアニメーション */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, visibility;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* ヒーロー画像のオーバーレイ */
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(45, 82, 56, 0.3), rgba(45, 82, 56, 0.6)), url('https://images.unsplash.com/photo-1528360983277-13d9b152c6d4?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* 手書き風のあしらい */
+        .handwritten-badge {
+            font-family: 'Yomogi', cursive;
+            transform: rotate(-3deg);
+        }

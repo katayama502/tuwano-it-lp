@@ -1,18 +1,18 @@
     /* ===== CSS Variables ===== */
     :root {
-      --dark: #2a2a1e;
-      --cream: #f2ede3;
-      --cream-dark: #e8e1d0;
-      --forest: #3d6b4a;
-      --forest-light: #5a8c6a;
-      --warm: #d4724a;
-      --warm-light: #e89070;
-      --gold: #c8b896;
+      --dark: #0f1f14;
+      --cream: #f4fcf6;
+      --cream-dark: #e6f5ea;
+      --forest: #1e5230;
+      --forest-light: #2c7a47;
+      --warm: #00b359;
+      --warm-light: #24d67c;
+      --gold: #73a886;
       --white: #ffffff;
-      --text-dark: #2a2a1e;
-      --text-mid: #5a5a4a;
-      --text-light: #8a8a7a;
-      --overlay: rgba(20, 24, 16, 0.55);
+      --text-dark: #0f1f14;
+      --text-mid: #385e45;
+      --text-light: #6e947d;
+      --overlay: rgba(10, 26, 16, 0.65);
     }
 
     /* ===== Reset & Base ===== */
@@ -544,8 +544,8 @@
       font-size: 22px;
       margin-bottom: 16px;
     }
-    .course-icon-canva { background: #fce9e2; }
-    .course-icon-ai { background: #e2edf8; }
+    .course-icon-canva { background: #dcf5e3; }
+    .course-icon-ai { background: #c8ebd3; }
     .course-icon-web { background: #e2f0e8; }
     .course-number {
       position: absolute;

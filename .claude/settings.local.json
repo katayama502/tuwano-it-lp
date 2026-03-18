@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.sa-nu.com)",
+      "Bash(curl -s \"https://www.sa-nu.com/lp/co-owners-dog\")",
+      "Bash(curl -s \"https://www.sa-nu.com/lp/co-owners-dog/assets/dogfriendly-sa-nu.webflow.shared.5d766fd05.css\")",
+      "Bash(grep -E \"\\(color:|background-color:|#[0-9a-f]{3,6}\\)\")"
+    ]
+  }
+}

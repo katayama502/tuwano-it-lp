@@ -953,13 +953,28 @@
       margin-bottom: 16px;
     }
     .organizer-names {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
       font-size: 15px;
       color: var(--text-mid);
       letter-spacing: 0.05em;
+      flex-wrap: wrap;
     }
     .organizer-names span {
       font-weight: 600;
       color: var(--dark);
+      white-space: nowrap;
+    }
+    .organizer-names .organizer-cross {
+      font-weight: normal;
+      color: var(--text-mid);
+    }
+    .organizer-logo {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
     }
 
     /* ===== Footer ===== */

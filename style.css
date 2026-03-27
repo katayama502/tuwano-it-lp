@@ -1012,8 +1012,10 @@
     }
     .footer-links {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 12px 24px;
+      max-width: 600px;
     }
     .footer-link {
       font-size: 13px;
@@ -1034,16 +1036,159 @@
       color: rgba(242,237,227,0.35);
     }
 
-    /* ===== Sticky CTA ===== */
-    .sticky-cta {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 90;
-      transform: translateY(100px);
-      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    /* ===== Plan Card Button ===== */
+    .btn-plan {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background: var(--forest);
+      color: var(--white);
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: background 0.3s ease, transform 0.2s ease;
+      margin-top: auto;
     }
-    .sticky-cta.show { transform: translateY(0); }
+    .btn-plan:hover {
+      background: var(--forest-light);
+      transform: translateY(-2px);
+    }
+    .plan-card {
+      display: flex;
+      flex-direction: column;
+    }
+    .plan-features {
+      flex: 1;
+    }
+    .plan-footer {
+      padding: 0 28px 28px;
+    }
+
+    /* ===== Flow Section ===== */
+    .flow-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      position: relative;
+    }
+    .flow-item {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .flow-grid::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: var(--cream-dark);
+      z-index: 0;
+    }
+    .flow-icon-wrap {
+      width: 80px;
+      height: 80px;
+      background: var(--white);
+      border: 3px solid var(--cream-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      position: relative;
+      background: var(--white);
+    }
+    .flow-icon {
+      width: 32px;
+      height: 32px;
+      color: var(--forest);
+    }
+    .flow-step {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-light);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+    .flow-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .flow-text {
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    /* ===== FAQ Section ===== */
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: var(--white);
+      border-bottom: 1px solid var(--cream-dark);
+      padding: 24px 0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-question {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--dark);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+    .faq-q-mark {
+      color: var(--forest);
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1;
+    }
+    .faq-answer {
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.8;
+      padding-left: 32px;
+    }
+
+    /* ===== Mid CTA ===== */
+    .mid-cta {
+      background: var(--forest);
+      padding: 64px 0;
+      text-align: center;
+      color: var(--white);
+    }
+    .mid-cta-content {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .mid-cta-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .mid-cta-desc {
+      font-size: 15px;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 32px;
+    }
 
     /* ===== Responsive ===== */
     @media (max-width: 1024px) {
@@ -1066,7 +1211,8 @@
       .apply-grid { grid-template-columns: 1fr; }
       .option-card { flex-direction: column; }
       .option-price-wrap { text-align: left; }
-      .footer-top { flex-direction: column; }
+      .footer-top { flex-direction: column; gap: 40px; }
+      .footer-links { justify-content: flex-start; gap: 12px 20px; }
       .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
       
       /* Mobile Menu */
@@ -1094,6 +1240,15 @@
       .plan-price { font-size: 28px; }
       .hero-meta-item { flex-direction: row; align-items: flex-start; text-align: left; gap: 8px; }
       .hero-meta-item .icon { margin-top: 2px; }
+
+      /* Flow Responsive */
+      .flow-grid { grid-template-columns: 1fr; gap: 40px; }
+      .flow-grid::before { display: none; }
+      .flow-item { text-align: center; }
+      
+      /* FAQ Responsive */
+      .faq-question { font-size: 15px; }
+      .faq-answer { padding-left: 0; margin-top: 8px; }
     }
     @media (max-width: 480px) {
       .hero-meta { gap: 16px; }

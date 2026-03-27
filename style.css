@@ -5,8 +5,8 @@
       --cream-dark: #e6f5ea;
       --forest: #1e5230;
       --forest-light: #2c7a47;
-      --warm: #00b359;
-      --warm-light: #24d67c;
+      --warm: #06C755;
+      --warm-light: #2eff8c;
       --gold: #73a886;
       --white: #ffffff;
       --text-dark: #0f1f14;
@@ -528,7 +528,7 @@
       transform: scale(1.05);
     }
     .course-card-top {
-      padding: 24px 28px 24px;
+      padding: 32px 28px 24px;
       position: relative;
       flex: 1;
       display: flex;
@@ -640,7 +640,7 @@
       border-radius: 0 0 0 12px;
     }
     .plan-header {
-      padding: 28px 28px 20px;
+      padding: 32px 28px 20px;
       background: var(--cream);
     }
     .plan-emoji {
@@ -1098,8 +1098,11 @@
     @media (max-width: 480px) {
       .hero-meta { gap: 16px; }
       .hero-meta-item { font-size: 13px; }
-      .btn-primary, .btn-line { padding: 14px 28px; font-size: 14px; }
+      .btn-primary, .btn-line { padding: 14px 24px; font-size: 14px; width: 100%; justify-content: center; }
       .hero-title { font-size: 20px; }
       .apply-cta-title { font-size: 18px; }
       .apply-cta-buttons .btn-line, .apply-cta-buttons .btn-outline { width: 100%; justify-content: center; }
+      .nav-logo { font-size: 12px; }
+      .sticky-cta { left: 16px; right: 16px; bottom: 16px; }
+      .sticky-cta .btn-line { width: 100%; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.4); }
     }

@@ -1141,6 +1141,18 @@
     .faq-item:last-child {
       border-bottom: none;
     }
+    .faq-answer {
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.8;
+      padding-left: 32px;
+      display: none;
+      padding-top: 8px;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
     .faq-question {
       font-size: 16px;
       font-weight: 600;
@@ -1148,7 +1160,7 @@
       display: flex;
       align-items: flex-start;
       gap: 12px;
-      margin-bottom: 12px;
+      margin-bottom: 0; /* Changed from 12px since answer is hidden */
       cursor: pointer;
     }
     .faq-q-mark {
@@ -1158,11 +1170,8 @@
       font-size: 20px;
       line-height: 1;
     }
-    .faq-answer {
-      font-size: 14px;
-      color: var(--text-mid);
-      line-height: 1.8;
-      padding-left: 32px;
+    .faq-item.active .faq-question {
+      margin-bottom: 12px;
     }
 
     /* ===== Mid CTA ===== */

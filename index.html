@@ -70,6 +70,7 @@
       <a href="#plans" class="nav-link">参加プラン</a>
       <a href="#schedule" class="nav-link">スケジュール</a>
       <a href="#venue" class="nav-link">滞在拠点</a>
+      <a href="#access" class="nav-link">アクセス</a>
       <a href="#flow" class="nav-link">参加の流れ</a>
       <a href="#faq" class="nav-link">よくある質問</a>
       <a href="https://lin.ee/OFQc0Utd" class="nav-cta" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="margin-right:4px; vertical-align:middle;"><path d="M12 2C6.48 2 2 6.03 2 11c0 3.68 2.26 6.88 5.6 8.69L7 22l2.94-1.57c.65.18 1.35.28 2.06.28 5.52 0 10-4.03 10-9S17.52 2 12 2zm1.75 12.25l-2.25-2.5-4.5 2.5 5-5.25 2.25 2.5 4.5-2.5-5 5.25z"/></svg>お申し込みはこちら</a>
@@ -516,8 +517,166 @@
     </div>
   </section>
 
+  <!-- Access Section -->
+  <section class="section bg-cream" id="access">
+    <div class="container">
+      <div class="text-center fade-in" style="margin-bottom:56px">
+        <p class="section-label">ACCESS</p>
+        <h2 class="section-title">会場へのアクセス・交通手段</h2>
+        <div class="section-divider-center"></div>
+      </div>
+      
+      <!-- Venue Basic Info -->
+      <div class="access-card fade-in">
+        <div class="access-title">会場情報（前提）</div>
+        <ul class="access-route-list" style="list-style:none; padding:0;">
+          <li style="margin-bottom:8px;"><strong>会場名：</strong>ADDress つわの寮（島根県鹿足郡津和野町）</li>
+          <li style="margin-bottom:8px;"><strong>最寄り駅：</strong>JR山口線「津和野駅」</li>
+          <li><strong>駅から会場まで：</strong>徒歩約20分（約1.6km） / タクシー約5分</li>
+        </ul>
+      </div>
+
+      <!-- Outbound / Return Tabs -->
+      <div class="fade-in fade-in-delay-1">
+        <div class="tabs-nav">
+          <button class="tab-btn active" onclick="switchTab('access-outbound', this)">往路（7/4 土）</button>
+          <button class="tab-btn" onclick="switchTab('access-return', this)">帰路（7/5 日）</button>
+        </div>
+
+        <!-- 往路 -->
+        <div class="tab-pane active" id="access-outbound">
+          
+          <div class="access-block">
+            <div class="access-title">
+              <span class="access-badge-airport">✈️ 飛行機利用</span>
+              萩・石見空港から
+            </div>
+            
+            <div class="access-route-box">
+              <div class="access-route-title">13:00集合に間に合う推奨ルート <span class="access-badge-rec">推奨</span></div>
+              <ul class="access-route-list">
+                <li><strong>ANA725便：</strong> 羽田 8:50発 → 萩・石見 10:20着</li>
+                <li><strong>乗合タクシー：</strong> 空港 約10:30発 → 津和野駅 約11:20着 <span class="access-badge-req">要事前予約</span></li>
+                <li><strong>会場へ：</strong> 津和野駅から徒歩または駅前タクシー → 11:30〜11:40頃 会場着</li>
+                <li style="list-style:none; margin-top:4px; font-size:13px; color:var(--text-light);">※13:00集合まで約1時間以上の余裕があります。</li>
+              </ul>
+              <div class="alert-box">
+                ANA727便（羽田16:00発）は到着が17:30頃となり、13:00の集合に間に合わないためご利用いただけません。
+              </div>
+            </div>
+            
+            <div class="access-route-box" style="background:var(--white);">
+              <div class="access-route-title" style="border-bottom:none; margin-bottom:0; font-size:15px;">空港乗合タクシー（KoiKoiタクシー）情報</div>
+              <ul class="access-route-list" style="margin-top:8px;">
+                <li><strong>予約締切：</strong> 乗車希望日の前日21時まで <span class="access-badge-req">要事前予約</span><br><span style="font-size:13px; color:var(--text-light);">（当日空席があれば予約なしでも乗車できる場合あり。乗務員にご確認ください）</span></li>
+                <li><strong>料金：</strong> 大人 2,200円（津和野駅・なごみの里）/ 小学生 半額 / 未就学児 無料</li>
+                <li><strong>運行会社：</strong> 株式会社フォーブル 津和野営業所（KoiKoiタクシー）</li>
+                <li><strong>電話予約：</strong> <a href="tel:0856-72-3700" style="color:var(--forest); text-decoration:underline; font-weight:600;">0856-72-3700</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="access-block">
+            <div class="access-title">
+              <span class="access-badge-train">🚃 電車利用</span>
+              JR津和野駅から
+            </div>
+            <p style="font-size:14px; margin-bottom:16px;">路線：JR山口線（新山口〜益田） / 運賃：益田〜津和野 590円、新山口〜津和野 1,340円</p>
+
+            <div class="access-route-box">
+              <div class="access-route-title">益田方面から</div>
+              <ul class="access-route-list">
+                <li><strong>普通列車：</strong> 益田 11:12発 → 津和野 11:53着 <span class="access-badge-rec">推奨</span></li>
+                <li style="list-style:none; margin-top:4px; font-size:13px; color:var(--text-light);">※ANA725便（10:20着）→ 空港バス（10:55発）→ 益田駅（11:07着）からの乗り継ぎも可能です。</li>
+              </ul>
+              <div class="alert-box">
+                特急スーパーおき3号（益田13:27発）は、集合に間に合いません。
+              </div>
+            </div>
+
+            <div class="access-route-box">
+              <div class="access-route-title">新山口方面から</div>
+              <ul class="access-route-list">
+                <li><strong>普通列車：</strong> 新山口 10:55発 → 津和野 約12:13着 <span class="access-badge-rec">推奨</span></li>
+                <li><strong>特急スーパーおき：</strong> 新山口 09:16発 → 津和野 約10:04着（※特急料金別途）</li>
+              </ul>
+            </div>
+            <div class="alert-box">
+              JR山口線は本数が非常に少ないため（1〜2時間に1本程度）、必ず事前に最新の時刻表をご確認ください。
+            </div>
+          </div>
+        </div>
+
+        <!-- 帰路 -->
+        <div class="tab-pane" id="access-return">
+          
+          <div class="access-block">
+            <div class="access-title">
+              <span class="access-badge-airport">✈️ 飛行機利用</span>
+              萩・石見空港へ
+            </div>
+            
+            <div class="access-route-box">
+              <div class="access-route-title">16:00解散後のルート <span class="access-badge-rec">推奨</span></div>
+              <ul class="access-route-list">
+                <li><strong>乗合タクシー：</strong> 津和野駅 約16:35発 → 空港 約17:35着 <span class="access-badge-req">要事前予約</span></li>
+                <li><strong>ANA728便：</strong> 萩・石見 18:15発 → 羽田 20:00着</li>
+              </ul>
+              <div class="alert-box">
+                解散（16:00）から出発（16:35頃）まで約35分のため、速やかな移動が必要です。<br>乗合タクシーの正確な集荷時刻は、事前にKoiKoiタクシー（<a href="tel:0856-72-3700" style="text-decoration:underline;">0856-72-3700</a>）へ必ずご確認ください。
+              </div>
+            </div>
+          </div>
+
+          <div class="access-block">
+            <div class="access-title">
+              <span class="access-badge-train">🚃 電車利用</span>
+              JR津和野駅から
+            </div>
+            
+            <div class="access-route-box">
+              <div class="access-route-title">新山口・山口方面（博多・広島・大阪・東京方面）へ</div>
+              <ul class="access-route-list">
+                <li><strong>普通列車：</strong> 津和野 16:55発 → 山口 約18:06着 → 新山口 約18:36着 <span class="access-badge-rec">推奨</span></li>
+                <li><strong>特急スーパーおき：</strong> 津和野 18:11発 → 新山口 約19:05着（※特急料金別途）</li>
+              </ul>
+            </div>
+
+            <div class="access-route-box">
+              <div class="access-route-title">益田・山陰方面（島根・鳥取方面）へ</div>
+              <ul class="access-route-list">
+                <li><strong>普通列車：</strong> 津和野 16:55発 → 益田 17:36着</li>
+                <li><strong>特急スーパーおき6号：</strong> 津和野 17:21発 → 益田 18:00着（※特急料金別途）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Helpful Info -->
+      <div class="access-block fade-in fade-in-delay-2" style="margin-top:40px;">
+        <div class="access-title" style="border-left-color:var(--gold);">💡 お役立ち情報</div>
+        <div class="grid-3" style="gap:16px;">
+          <div class="access-route-box" style="margin-bottom:0; background:var(--white); border:1px solid var(--cream-dark);">
+            <div style="font-weight:600; margin-bottom:4px;">🚕 駅前タクシー（津和野駅）</div>
+            <p style="font-size:13px; color:var(--text-mid);">津和野駅前に常駐（台数少なめ）。<br>駅→寮：約5分・1,000円前後</p>
+          </div>
+          <div class="access-route-box" style="margin-bottom:0; background:var(--white); border:1px solid var(--cream-dark);">
+            <div style="font-weight:600; margin-bottom:4px;">🚌 空港バス（石見空港線）</div>
+            <p style="font-size:13px; color:var(--text-mid);">益田駅から空港まで。<br>運賃: 340円 / 所要時間: 約12分<br>石見交通: <a href="tel:0856-24-0080" style="color:var(--forest);">0856-24-0080</a></p>
+          </div>
+          <div class="access-route-box" style="margin-bottom:0; background:var(--white); border:1px solid var(--cream-dark);">
+            <div style="font-weight:600; margin-bottom:4px;">🚗 レンタカー</div>
+            <p style="font-size:13px; color:var(--text-mid);">萩・石見空港1階にカウンターあり。<br>（トヨタ、タイムズ、ニッポン、オリックス等）</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- Flow Section -->
-  <section class="section bg-cream" id="flow">
+  <section class="section bg-white" id="flow">
     <div class="container">
       <div class="text-center fade-in" style="margin-bottom:56px">
         <p class="section-label">FLOW</p>
@@ -570,7 +729,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section class="section bg-white" id="faq">
+  <section class="section bg-cream" id="faq">
     <div class="container">
       <div class="text-center fade-in" style="margin-bottom:56px">
         <p class="section-label">Q & A</p>
@@ -619,7 +778,7 @@
   </section>
 
   <!-- Application Section -->
-  <section class="section bg-cream" id="apply">
+  <section class="section bg-white" id="apply">
     <div class="container">
       <div class="text-center fade-in" style="margin-bottom:56px">
         <p class="section-label">APPLICATION</p>
@@ -729,6 +888,7 @@
           <a href="#plans" class="footer-link">プラン・料金</a>
           <a href="#schedule" class="footer-link">スケジュール</a>
           <a href="#venue" class="footer-link">滞在拠点</a>
+          <a href="#access" class="footer-link">アクセス</a>
           <a href="#flow" class="footer-link">参加までの流れ</a>
           <a href="#faq" class="footer-link">よくある質問</a>
           <a href="#apply" class="footer-link">お申し込み</a>
@@ -805,6 +965,18 @@
         }
       });
     });
+    // Access Tab Switcher
+    window.switchTab = function(tabId, btnElement) {
+      const container = btnElement.closest('.container');
+      const buttons = container.querySelectorAll('.tab-btn');
+      const panes = container.querySelectorAll('.tab-pane');
+      
+      buttons.forEach(btn => btn.classList.remove('active'));
+      panes.forEach(pane => pane.classList.remove('active'));
+      
+      btnElement.classList.add('active');
+      container.querySelector('#' + tabId).classList.add('active');
+    };
   </script>
 </body>
 </html>
